@@ -1,0 +1,76 @@
+import { StyleSheet } from 'react-native';
+import { COLORS, FONTS } from '../constants/theme';
+
+export default StyleSheet.create({
+  container: { flex: 1, backgroundColor: COLORS.background },
+  content: { paddingHorizontal: 24, paddingTop: 36, paddingBottom: 52 },
+  eyebrow: {
+    fontFamily: FONTS.mono,
+    fontSize: 10,
+    fontWeight: '700',
+    color: COLORS.primary,
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+    marginBottom: 6,
+  },
+  pageTitle: {
+    fontFamily: FONTS.serif,
+    fontSize: 28,
+    fontWeight: '700',
+    color: COLORS.text,
+    marginBottom: 4,
+  },
+  pageSubtitle: {
+    fontFamily: FONTS.sans,
+    fontSize: 13,
+    color: COLORS.textSecondary,
+    lineHeight: 20,
+    marginBottom: 32,
+  },
+  sectionLabel: {
+    fontFamily: FONTS.mono,
+    fontSize: 10,
+    fontWeight: '700',
+    color: COLORS.textMuted,
+    textTransform: 'uppercase',
+    letterSpacing: 1.5,
+    paddingTop: 24,
+    borderTopWidth: 1,
+    borderTopColor: COLORS.border,
+    marginBottom: 4,
+  },
+  appInfoSection: {
+    paddingTop: 32,
+    paddingBottom: 8,
+    borderTopWidth: 1,
+    borderTopColor: COLORS.border,
+    marginTop: 8,
+  },
+  appInfoTitle: {
+    fontFamily: FONTS.serif,
+    fontSize: 16,
+    fontWeight: '700',
+    color: COLORS.text,
+    marginBottom: 8,
+  },
+  appInfoText: {
+    fontFamily: FONTS.sans,
+    fontSize: 13,
+    color: COLORS.textSecondary,
+    lineHeight: 20,
+  },
+  footer: {
+    marginTop: 40,
+    paddingTop: 24,
+    borderTopWidth: 1,
+    borderTopColor: COLORS.border,
+    alignItems: 'center',
+  },
+  footerText: {
+    fontFamily: FONTS.mono,
+    fontSize: 10,
+    color: COLORS.textMuted,
+    textTransform: 'uppercase',
+    letterSpacing: 1.5,
+  },
+});
